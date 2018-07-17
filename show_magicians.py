@@ -1,9 +1,17 @@
 
-def show_magicians(names):
+def show_magicians(modified_magicians):
 
-	for name in names:
+	for name in modified_magicians:
 
 		print(name)
 
+def make_great(magicians, modified_magicians):
+
+	for name in magicians:
+		modified_magicians.append("the Great " + name.title())
+
 magicians = ['tangue', 'aburo', 'agbor', 'dona']
-show_magicians(magicians)
+modified_magicians = []
+make_great(magicians[:], modified_magicians)
+show_magicians(modified_magicians)
+
