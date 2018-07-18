@@ -6,3 +6,5 @@ def make_sandwiches(*toppings):
 make_sandwiches('mayonaise', 'korn', 'mjolk')
 make_sandwiches('oil', 'salt')
 make_sandwiches('guka', 'tomat', 'lok', 'peppar', 'gron')
+
+
