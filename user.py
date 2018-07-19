@@ -5,6 +5,7 @@ class User(object):
 		self.profile = {}
 		self.firs_name = firs_name
 		self.last_name = last_name
+		self.login_attempts = 0
 
 		for key, value in properties.items():
 			self.profile[key] = value
@@ -22,6 +23,23 @@ class User(object):
 		print("Welcome " + self.firs_name + "!")
 		print("\n")
 
+	def increment_login_attempts(self):
+		"""increment login attempts"""
+		self.login_attempts += 1
+
+	def reset_login_attempts(self):
+		"""reset login attempts to 0"""
+		self.login_attempts = 0
+
+user = User("home", "house")
+user.increment_login_attempts()
+user.increment_login_attempts()
+user.increment_login_attempts()
+user.increment_login_attempts()
+print(user.login_attempts)
+user.reset_login_attempts()
+print(user.login_attempts)
+
 
 user1 = User("anselm", "Muweh", sex = "M", city = "Umea", telephone = "0704646288", username = "tmuweh")
 user2 = User("agobin", "folefac", sex = "M", city = "Somewhere" )
@@ -37,3 +55,5 @@ user3.describe_user()
 user3.greet_user()
 user4.describe_user()
 user4.greet_user()
+
+
