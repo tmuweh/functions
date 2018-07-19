@@ -18,7 +18,11 @@ class Restaurant(object):
 		print(self.restaurant_name + " is open now")
 	def set_number_served(self, number_served):
 		"""sets a new number serve for restaurant class"""
-		self.number_served = number_served
+		if self.number_served <= number_served:
+			self.number_served = number_served
+
+		else:
+			pass
 	def increment_number_sesrved(self, increment):
 		"""increments number_served by increment"""
 		self.number_served += increment
