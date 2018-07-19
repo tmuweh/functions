@@ -9,10 +9,11 @@ class Restaurant(object):
 
 	def describe_restaurant(self):
 		"""prints information about restaurant"""
-		pass
+		print("Name: " + self.restaurant_name)
+		
 
 	def open_restaurant(self):
 		"""display information whether restaurant is open"""
-		pass
+		print("Cuisine Type: " + self.cuisine_type)
+		
 
-	
