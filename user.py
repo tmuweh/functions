@@ -30,30 +30,3 @@ class User(object):
 	def reset_login_attempts(self):
 		"""reset login attempts to 0"""
 		self.login_attempts = 0
-
-user = User("home", "house")
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.increment_login_attempts()
-user.increment_login_attempts()
-print(user.login_attempts)
-user.reset_login_attempts()
-print(user.login_attempts)
-
-
-user1 = User("anselm", "Muweh", sex = "M", city = "Umea", telephone = "0704646288", username = "tmuweh")
-user2 = User("agobin", "folefac", sex = "M", city = "Somewhere" )
-user3 = User("Lydia", "Muweh", sex = "F", city = "St Paulis")
-user4 = User("Aburo", "Terence", address = "Mariehemv")
-
-
-user1.describe_user()
-user1.greet_user()
-user2.describe_user()
-user2.greet_user()
-user3.describe_user()
-user3.greet_user()
-user4.describe_user()
-user4.greet_user()
-
-
