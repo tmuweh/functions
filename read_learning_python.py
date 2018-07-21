@@ -13,4 +13,6 @@ with open(filename) as file_object:
 	lines = file_object.readlines()
 	print('\n')
 for line in lines:
-	print(line.rstrip())
+	print(line.replace('python', 'C'))
+	#print(line)
+
