@@ -5,6 +5,7 @@ def addition(num1, num2):
 		sum = int(num1) + int(num2)
 	except Exception as e:
 		#do nothing but move on
+		print(e)
 		pass
 	else:
 		print("Sum is " + str(sum))
